@@ -99,8 +99,7 @@ public class SyrHashTable {
             while (finish.first != null && finish.first.num != valueeeee)
                 finish = finish.first;
 
-            // if reached at the end without finding the
-            // value
+            
             if (finish.first == null) {
                 System.out.println("\nElement not found\n");
                 return;
@@ -123,7 +122,7 @@ public class SyrHashTable {
         }
     }
 
-    // Definition of Hash function
+ 
     private int hash(Integer anyelem)
     {
         int hashValue = anyelem.hashCode();
@@ -136,7 +135,6 @@ public class SyrHashTable {
         return hashValue;
     }
 
-    // Function to print hash table
     public void printHashTable()
     {
         System.out.println();
